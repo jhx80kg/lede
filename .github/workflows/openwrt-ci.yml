@@ -7557,7 +7557,7 @@ jobs:
 
           sed -i '3,4d' ./package/small-package/luci-app-tencentddns/files/luci/controller/tencentddns.lua
           sed -i '2a\entry({"admin", "network", "tencentddns"},cbi("tencentddns"),_("TencentDDNS"),2)' ./package/small-package/luci-app-tencentddns/files/luci/controller/tencentddns.lua
-          sed -i 's/bootstrap/argonne/g' ./feeds/luci/collections/luci
+          sed -i 's/bootstrap/argonne/g' ./feeds/luci/collections/luci/Makefile
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
 

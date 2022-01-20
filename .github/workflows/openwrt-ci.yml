@@ -4833,7 +4833,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-ahcp is not set
           # CONFIG_PACKAGE_luci-app-airplay2 is not set
           # CONFIG_PACKAGE_luci-app-aliddns is not set
-          CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
+          CONFIG_PACKAGE_luci-app-aliyundrive-webdav=y
           # CONFIG_PACKAGE_luci-app-amule is not set
           # CONFIG_PACKAGE_luci-app-argon-config is not set
           # CONFIG_PACKAGE_luci-app-argonne-config is not set

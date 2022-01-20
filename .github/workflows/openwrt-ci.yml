@@ -4833,7 +4833,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-ahcp is not set
           # CONFIG_PACKAGE_luci-app-airplay2 is not set
           # CONFIG_PACKAGE_luci-app-aliddns is not set
-          # CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
+          CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
           # CONFIG_PACKAGE_luci-app-amule is not set
           # CONFIG_PACKAGE_luci-app-argon-config is not set
           # CONFIG_PACKAGE_luci-app-argonne-config is not set
@@ -7557,7 +7557,7 @@ jobs:
 
           sed -i '3,4d' ./package/small-package/luci-app-tencentddns/files/luci/controller/tencentddns.lua
           sed -i '2a\entry({"admin", "network", "tencentddns"},cbi("tencentddns"),_("TencentDDNS"),2)' ./package/small-package/luci-app-tencentddns/files/luci/controller/tencentddns.lua
-          sed -i 's/bootstrap/tomato/g' ./feeds/luci/collections/luci/Makefile
+          # sed -i 's/bootstrap/tomato/g' ./feeds/luci/collections/luci/Makefile
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
 
